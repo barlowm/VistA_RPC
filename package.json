@@ -1,0 +1,25 @@
+{
+  "name": "vista_rpc",
+  "version": "1.0.0",
+  "description": "VistA RPC Documentation blog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barlowm/VistA_RPC.git"
+  },
+  "author": "mike barlow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barlowm/VistA_RPC/issues"
+  },
+  "homepage": "https://github.com/barlowm/VistA_RPC",
+
+  "dependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-ftp-deploy" : "*"
+  },
+
+  "scripts": {
+    "pub": "budo bsa_calc.js --live"
+  }
+}

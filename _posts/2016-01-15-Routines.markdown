@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "VistA-M Routines List"
+date:   2016-01-15
+weight: 100
+categories: Documentation
+---
+
+The list of all routines ordered alphabetically is listed in the [OSEHRA Documentation](http://code.osehra.org/dox/routines.html)
+However this list isn't all that useful unless you know what the RPC Code (2-4 letters) stands for.
+Still looking for a mapping of that.
+
+Though it looks like anything with the same preceeding letters falls under the same category:
+e.g. SD is for scheduling
+SD08STOP is (probably) a STOP code for a scheduled appointment
+SD08SUPP is also for scheduling... But don't know what at this point.
+
+But the VistA-M source from github takes up ove 5 GB and a local copy of that is on: D:\WebRoot\_CODE_\_VistA_\VistA-M
+
+
+Although the [Packages.CSV](https://github.com/OSEHRA/VistA-M/blob/master/Packages.csv) file does have some mapping information
+
+For example:
+<table border='1'>
+<tr><th>Package Name</th><th>Directory Name</th><th>Prefixes</th><th>File Numbers</th><th>File Names</th></tr>
+<tr><td>SCHEDULING</td><td>Scheduling</td><td>SD</td><td>40.7</td><td>CLINIC STOP</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>SC</td><td>40.9</td><td>LOCATION TYPE</td></tr>
+</table>
+
+Both SD and SC fall under Scheduling and all scheduling routines fall under the [Scheduling/Routines](https://github.com/OSEHRA/VistA-M/tree/master/Packages/Scheduling/Routines) section of the repo
+
+
+(Table Markdown format [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables))
+
+Other (somewhat random) links are:
+
+* <a href="http://code.osehra.org/gitweb/?p=VistA.git">OSEHRA / VistA.git / summary</a>
+* <a href="http://www.va.gov/vdl/">VA Software Document Library</a>
+* <a href="http://www.ehealth.va.gov/VistA_Monograph.asp">VistA Monograph</a>
+* <a href="https://mail.google.com/mail/u/0/#search/VistaLink/14a3eb7f52a7ebd6">Email</a> from Sean on a call to verify Access Codes
+* and another <a href="https://mail.google.com/mail/u/0/#search/VistaLink/137187f160c48b18">Email</a> on writing directly to Mumps and an attached word doc on "VistA Supported References" which contains some info
+* <a href="http://www.va.gov/vdl/application.asp?appid=163">VistALink</a>
+* <a href="http://www.va.gov/vdl/application.asp?appid=8">HL7</a>
+* another <a href="https://mail.google.com/mail/u/0/#search/VistaLink/147b1aaf3bc0012d">Email</a> which contains a doc that lists some packages and their codes
+* another <a href="https://mail.google.com/mail/u/0/#search/VistAJS/14aa165340378e1c">Email</a> which contains the VistAJS.zip
+* another <a href="https://mail.google.com/mail/u/0/#search/VistAJS/149d517008905e47">Email</a> on COMS - eHMP - Node JS
+
+
+
+
+*Note that the VA Software Document Library brings you to a page with a menu and in most cases it looks like it's the ["Clinical Section"](http://www.va.gov/vdl/section.asp?secid=1) that will have all the information (again for example, Clinical Section lists ["Scheduling"](http://www.va.gov/vdl/application.asp?appid=100) )*
